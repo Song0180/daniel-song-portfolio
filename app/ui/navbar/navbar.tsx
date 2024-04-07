@@ -9,8 +9,6 @@ import NavLinksMobile from './navLinksMobile';
 
 export default function Navbar() {
   const { theme, setTheme } = useTheme();
-
-  // TODO: optimise this
   const [mounted, setMounted] = useState(false);
 
   useEffect(() => {
@@ -40,7 +38,7 @@ export default function Navbar() {
           <button
             aria-label='Toggle Dark Mode'
             type='button'
-            className='w-10 h-10 p-3 rounded focus:outline-none'
+            className='w-10 h-10 rounded focus:outline-none'
             onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
           >
             {mounted && (
