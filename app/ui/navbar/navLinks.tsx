@@ -31,7 +31,7 @@ export default function NavLinks() {
                 pathname === link.href
                   ? 'text-gray-800 font-bold dark:text-gray-400'
                   : 'text-gray-600 dark:text-gray-300 font-normal '
-              }`}
+              } flex items-center`}
             >
               {link.name}
               {/* TODO: optimise this svg logo */}
