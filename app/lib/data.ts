@@ -2,9 +2,10 @@ const userData = {
   githubUsername: 'song0180',
   name: 'Daniel Song Yu',
   designation: 'Full-Stack Software Engineer',
-  avatarUrl: '/avatar.png',
+  profileImgUrl: '/profile.jpeg',
   email: 'danielsongyu@gmail.com',
   address: 'Singapore, Singapore',
+  roles: ['Developer', 'Engineer', 'Team Player'],
   projects: [
     {
       title: 'haha',

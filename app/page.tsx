@@ -1,3 +1,13 @@
-export default function Home() {
-  return <main className='dark:bg-gray-800 w-full'></main>;
-}
+import Hero from './ui/home/hero';
+import LatestRepos from './ui/home/latestRepos';
+
+const Home = async () => {
+  return (
+    <main>
+      <Hero />
+      <LatestRepos />
+    </main>
+  );
+};
+
+export default Home;

@@ -18,17 +18,19 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang='en' className='bg-slate-100'>
+    <html lang='en'>
       <body className={inter.className}>
-        <ThemeProvider defaultTheme='light' attribute='class'>
-          <main className='dark:bg-gray-800 w-full'>
+        <ThemeProvider
+          attribute='class'
+          defaultTheme='system'
+          enableSystem
+          enableColorScheme
+        >
+          <div className='bg-white dark:bg-slate-700 w-full'>
             <Navbar />
-            <div className='relative'>
-              <header className='absolute bottom-6 left-0 right-0 bg-white h-screen -z-10' />
-            </div>
             {children}
             <Footer />
-          </main>
+          </div>
         </ThemeProvider>
       </body>
     </html>
