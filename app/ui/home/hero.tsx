@@ -3,12 +3,12 @@ import Image from 'next/image';
 
 export default function Hero() {
   return (
-    <div className='mx-auto max-w-6xl flex flex-row justify-center items-start overflow-hidden'>
-      <div className='w-full pt-0 pb-20 pl-4 sm:pr-8 md:text-left lg:pr-20 lg:pt-20 lg:w-1/2'>
+    <div className='mx-auto max-w-5xl flex flex-row items-start overflow-hidden'>
+      <div className='w-full pt-0 pb-20 pl-4 sm:pr-8 md:text-left lg:pl-8 lg:mr-20 lg:pt-20 lg:w-1/2'>
         {userData.roles.map((role) => (
           <h1
             key={role}
-            className='mx-auto text-4xl md:text-8xl font-bold text-gray-700 dark:text-gray-200 my-2'
+            className='mx-auto text-5xl md:text-8xl font-bold text-gray-700 dark:text-gray-200 my-2'
           >
             {role}
             {'.'}

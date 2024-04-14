@@ -6,10 +6,10 @@ export default async function LatestRepos() {
   const repos = await getLatestRepos(userData.githubUsername);
 
   return (
-    <section className='bg-slate-100 -mt-28 md:-mt-32 lg:-mt-48 dark:bg-gray-900 pb-20'>
+    <section className='bg-slate-100 -mt-28 md:-mt-32 lg:-mt-48 dark:bg-black pb-20'>
       <div className='max-w-5xl mx-auto'>
-        <div className='flex flex-col md:flex-row justify-between items-center md:pt-40 mx-10'>
-          <h1 className='text-6xl lg:text-9xl max-w-lg font-bold text-gray-500 my-20 md:my-0 md:text-white dark:text-gray-600 text-center lg:text-left'>
+        <div className='flex flex-col md:flex-row justify-between items-center md:pt-40 mx-4 lg:mx-6'>
+          <h1 className='text-6xl lg:text-9xl max-w-lg font-bold text-gray-500 my-20 md:my-0 md:text-white dark:text-neutral-800 self-start text-left'>
             Latest Repos
           </h1>
 

@@ -26,7 +26,7 @@ export default function RootLayout({
           enableSystem
           enableColorScheme
         >
-          <div className='bg-white dark:bg-slate-700 w-full'>
+          <div className='bg-white dark:bg-zinc-950 w-full'>
             <Navbar />
             {children}
             <Footer />
