@@ -3,12 +3,12 @@ import userData from '@/app/lib/data';
 export default function Experience() {
   return (
     <section>
-      <div className='max-w-6xl mx-auto h-48'>
-        <h1 className='mx-16 text-5xl md:text-8xl font-bold text-gray-700 dark:text-gray-200 py-20 text-center md:text-left'>
+      <div className='max-w-5xl mx-auto h-48 flex flex-col justify-between items-center'>
+        <h1 className='self-start mx-4 lg:mx-8 text-5xl md:text-8xl font-bold text-gray-700 dark:text-gray-200 py-20 text-left'>
           Experience
         </h1>
       </div>
-      <div className='bg-slate-100 dark:bg-black -mt-4'>
+      <div className='bg-slate-100 dark:bg-black -mt-20 md:-mt-12 pt-10'>
         <div className='grid grid-cols-1 max-w-xl mx-auto pt-20'>
           {userData.experience.map((exp, idx) => (
             <>
@@ -51,7 +51,7 @@ const ExperienceCard = ({
 }) => {
   return (
     <div className='relative p-4 rounded-md bg-white dark:bg-zinc-900 shadow-xl dark:shadow-slate-800 z-10 mx-4'>
-      <h1 className='absolute -top-10 md:-left-10 md:-top-10 text-4xl font-bold text-slate-300 dark:text-neutral-800'>
+      <h1 className='absolute -top-10 md:-left-10 md:-top-10 text-4xl font-bold text-slate-300 dark:text-neutral-700'>
         {year}
       </h1>
       <h1 className='font-semibold text-xl'>{title}</h1>
