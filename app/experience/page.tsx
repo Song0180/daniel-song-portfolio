@@ -1,5 +1,7 @@
-const Experience = () => {
-  return <div>Experience</div>;
+import Experience from '../ui/experience/experience';
+
+const ExperiencePage = () => {
+  return <Experience />;
 };
 
-export default Experience;
+export default ExperiencePage;
