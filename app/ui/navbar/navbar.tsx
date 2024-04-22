@@ -49,7 +49,7 @@ export default function Navbar() {
   }, []);
 
   return (
-    <nav className='max-w-6xl mx-auto px-4 pt-10 md:pb-10'>
+    <nav className='max-w-6xl mx-auto px-4 pt-10 md:pb-10 z-10 relative'>
       <div className='grid grid-rows-2 grid-cols-2 lg:flex lg:flex-row lg:justify-between lg:items-center'>
         <div className='flex flex-col row-start-1'>
           <Link href='/'>
@@ -62,7 +62,7 @@ export default function Navbar() {
           </Link>
         </div>
 
-        <ul className='space-x-8 items-center row-start-2 w-full flex col-span-full justify-between md:justify-start lg:w-min'>
+        <ul className='items-center row-start-2 w-full flex col-span-full md:justify-start lg:w-min'>
           <NavLinks />
         </ul>
 

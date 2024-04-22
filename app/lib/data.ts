@@ -86,8 +86,8 @@ const userData = {
   ],
   resumeUrl: 'http://www.cdqz.net/html/cdqz/html/index.html',
   socialLinks: {
-    linkedin: 'https://www.linkedin.com/in/daniel-yu-song/',
-    github: 'https://github.com/song0180',
+    LinkedIn: 'https://www.linkedin.com/in/daniel-yu-song/',
+    GitHub: 'https://github.com/song0180',
   },
 };
 

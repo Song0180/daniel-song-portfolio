@@ -50,7 +50,7 @@ const ExperienceCard = ({
   companyLink: string;
 }) => {
   return (
-    <div className='relative p-4 rounded-md bg-white dark:bg-zinc-900 shadow-xl dark:shadow-slate-800 z-10 mx-4'>
+    <div className='relative p-4 rounded-md bg-white dark:bg-zinc-900 shadow-xl z-10 mx-4'>
       <h1 className='absolute -top-10 md:-left-10 md:-top-10 text-4xl font-bold text-slate-300 dark:text-neutral-700'>
         {year}
       </h1>

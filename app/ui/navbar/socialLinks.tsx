@@ -9,7 +9,7 @@ interface SocialLinks {
 const links: SocialLinks[] = [
   {
     name: 'LinkedIn',
-    href: userData.socialLinks.linkedin,
+    href: userData.socialLinks.LinkedIn,
     logo: (
       <svg
         xmlns='http://www.w3.org/2000/svg'
@@ -25,7 +25,7 @@ const links: SocialLinks[] = [
   },
   {
     name: 'GitHub',
-    href: userData.socialLinks.github,
+    href: userData.socialLinks.GitHub,
     logo: (
       <svg
         xmlns='http://www.w3.org/2000/svg'
