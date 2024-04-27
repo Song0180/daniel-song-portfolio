@@ -4,7 +4,7 @@ import Image from 'next/image';
 export default function Hero() {
   return (
     <div className='mx-auto max-w-5xl flex flex-row items-start overflow-hidden'>
-      <div className='w-full pt-0 pb-20 pl-4 sm:pr-8 md:text-left lg:pl-8 lg:mr-20 md:pt-2 lg:w-1/2'>
+      <div className='w-full pt-0 pb-20 pl-4 sm:pr-8 md:text-left lg:pl-6 lg:mr-20 md:pt-2 lg:w-1/2'>
         {userData.roles.map((role) => (
           <h1
             key={role}

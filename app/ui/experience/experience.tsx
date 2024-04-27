@@ -4,7 +4,7 @@ export default function Experience() {
   return (
     <section>
       <div className='max-w-5xl mx-auto h-28 mt-2 md:mt-0 md:h-40 flex flex-col justify-end'>
-        <h1 className='self-start mx-4 lg:mx-8 text-5xl md:text-8xl font-bold text-gray-700 dark:text-gray-200 py-16 md:py-12 text-left'>
+        <h1 className='self-start mx-4 lg:mx-6 text-5xl md:text-8xl font-bold text-gray-700 dark:text-gray-200 py-16 md:py-12 text-left'>
           Experience
         </h1>
       </div>

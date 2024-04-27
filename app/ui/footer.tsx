@@ -22,7 +22,7 @@ export default function Footer() {
               Email me at
               <div className='inline-block transform hover:underline'>
                 <a
-                  className='px-2 py-1  hover:text-sky-700'
+                  className='px-2 py-1  hover:text-blue-500'
                   href={`mailto:${userData.email}`}
                 >
                   {userData.email}

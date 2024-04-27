@@ -8,16 +8,54 @@ const userData = {
   roles: ['Developer', 'Engineer', 'Team Player'],
   projects: [
     {
-      title: 'haha',
-      link: 'https://haha',
+      title: 'Rakuten Web Search',
+      url: 'https://websearch.rakuten.co.jp',
       imgUrl: '/haha.png',
+      description: '',
     },
   ],
   about: {
-    title: 'Hellow World',
-    description: [`Hellow World`],
-    currentProject: 'Hellow World',
-    currentProjectUrl: 'https://Hellow World',
+    title:
+      'I am a software engineer passionately professional in delivering the best user experience with daily-updated knowledge and modern technology.',
+    description: [
+      'Hi, I am Song Yu, you can also call me Daniel. Thank you very much for dropping by my personal portfolio website.',
+      'I have been in the Internet and Tech industry for 1 year. ',
+    ],
+    location: {
+      countryRegion: 'Singapore',
+      emoji: '🇸🇬',
+      city: 'Singapore',
+    },
+    currentJob: {
+      company: 'Rakuten Asia',
+      companyUrl: '',
+      article: 'an',
+      title: 'Associate Software Engineer',
+    },
+    jobOpportunities:
+      'I am currently not looking for new job opportunities, but I am more than happy to connect with you and offer any help if needed. ',
+    contact: [
+      'Please feel free to email me if you have any inquiry. I will try my best to get back to you as soon as possible.',
+      'We can also connect on LinkedIn if you would like to :)',
+    ],
+    languages: [
+      {
+        language: 'Chinese/中文',
+        proficiency: 'Native',
+      },
+      {
+        language: 'English',
+        proficiency: 'Full Professional',
+      },
+      {
+        language: 'Japanese',
+        proficiency: 'Elementry',
+      },
+      {
+        language: 'French',
+        proficiency: 'Elementry',
+      },
+    ],
   },
   experience: [
     {
