@@ -73,14 +73,15 @@ export default function About() {
                   Tech Stack
                 </h1>
                 <div className='flex flex-row flex-wrap mt-8'>
-                  <Image
+                  {/* <Image
                     src='https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/javascript/javascript.png'
                     className='h-20 w-20 mx-4 my-4'
                     alt='JavaScript Logo'
                     width={20}
                     height={20}
-                  />
-                  <Image
+                    quality={100}
+                  /> */}
+                  {/* <Image
                     src='https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/java/java.png'
                     className='h-20 w-20 mx-4 my-4'
                     alt='Java Logo'
@@ -128,7 +129,7 @@ export default function About() {
                     alt='MySQL Logo'
                     width={20}
                     height={20}
-                  />
+                  /> */}
                 </div>
               </div>
             </div>
