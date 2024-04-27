@@ -16,7 +16,7 @@ const userData = {
   ],
   about: {
     title:
-      'I am a software engineer passionately professional in delivering the best user experience with daily-updated knowledge and modern technology.',
+      'I am a dedicated software engineer committed to crafting exceptional products with an emphasis on user experience, leveraging up-to-date expertise and contemporary technologies.',
     description: [
       'Hi, I am Song Yu, you can also call me Daniel. Thank you very much for dropping by my personal portfolio website.',
       'I have been in the Internet and Tech industry for 1 year. ',

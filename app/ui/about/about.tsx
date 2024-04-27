@@ -13,17 +13,17 @@ export default function About() {
       <div className='bg-slate-100 dark:bg-black -mt-20 pt-10'>
         <div className='max-w-5xl mx-auto'>
           <div className='mx-4 lg:mx-6'>
-            <div className='text-container pt-8'>
-              <p className='leading-loose text-2xl text-gray-700 dark:text-gray-200 md:text-4xl font-semibold'>
+            <div className='text-container md:pt-8'>
+              <p className='md:leading-relaxed text-2xl text-gray-700 dark:text-gray-200 md:text-4xl font-semibold'>
                 {userData.about.title}
               </p>
             </div>
 
-            <div className='pt-20 grid grid-cols-1 md:grid-cols-3 gap-y-20 gap-x-20'>
+            <div className='pt-8 md:pt-20 grid grid-cols-1 md:grid-cols-3 gap-y-10 md:gap-y-20 gap-x-20'>
               {/* Side Panel */}
               <div className='inline-flex flex-col'>
                 <div className='mb-8'>
-                  <h1 className='text-xl font-semibold text-gray-700 dark:text-gray-200'>
+                  <h1 className='text-3xl md:text-xl font-semibold text-gray-700 dark:text-gray-200'>
                     Current Job
                   </h1>
                   <p className='text-lg text-gray-500 mt-4 dark:text-gray-300'>
@@ -39,7 +39,7 @@ export default function About() {
                   </p>
                 </div>
                 <div className='mb-8'>
-                  <h1 className='text-xl font-semibold text-gray-700 dark:text-gray-200'>
+                  <h1 className='text-3xl md:text-xl font-semibold text-gray-700 dark:text-gray-200'>
                     Location
                   </h1>
                   <p className='text-lg text-gray-500 mt-4 dark:text-gray-300'>
@@ -49,7 +49,7 @@ export default function About() {
                   </p>
                 </div>
                 <div className='mb-8'>
-                  <h1 className='text-xl font-semibold text-gray-700 dark:text-gray-200'>
+                  <h1 className='text-3xl md:text-xl font-semibold text-gray-700 dark:text-gray-200'>
                     New Opportunities
                   </h1>
                   <p className='text-lg text-gray-500 mt-4 dark:text-gray-300'>
@@ -57,7 +57,7 @@ export default function About() {
                   </p>
                 </div>
                 <div className='mb-8'>
-                  <h1 className='text-xl font-semibold text-gray-700 dark:text-gray-200'>
+                  <h1 className='text-3xl md:text-xl font-semibold text-gray-700 dark:text-gray-200'>
                     Contact
                   </h1>
 
@@ -72,7 +72,7 @@ export default function About() {
                   <p className='text-lg text-gray-500 mt-4 dark:text-gray-300'>
                     Email me at{' '}
                     <a
-                      className='hover:underline hover:text-blue-500'
+                      className='dark:text-gray-100 font-bold hover:underline dark:hover:text-blue-500'
                       href={`mailto:${userData.email}`}
                     >
                       {userData.email}
@@ -81,7 +81,7 @@ export default function About() {
                 </div>
               </div>
               {/* Text area */}
-              <div className='col-span-1 md:col-span-2'>
+              <div className='col-span-1 md:col-span-2 order-first md:order-last'>
                 {userData.about.description?.map((desc, idx) => (
                   <p
                     key={idx}
@@ -91,7 +91,7 @@ export default function About() {
                   </p>
                 ))}
 
-                <h1 className='text-3xl text-gray-700 dark:text-gray-200  inline-block font-bold'>
+                <h1 className='text-3xl my-4 text-gray-700 dark:text-gray-200  inline-block font-bold'>
                   Tech Stack
                 </h1>
                 <div className='flex flex-row flex-wrap mt-8'>
@@ -153,7 +153,7 @@ export default function About() {
                     height={20}
                   /> */}
                 </div>
-                <h1 className='text-3xl text-gray-700 dark:text-gray-200  inline-block font-bold'>
+                <h1 className='text-3xl my-4 text-gray-700 dark:text-gray-200  inline-block font-bold'>
                   Language Proficiencies
                 </h1>
                 <ul className='text-lg text-gray-500 mt-4 dark:text-gray-300'>
