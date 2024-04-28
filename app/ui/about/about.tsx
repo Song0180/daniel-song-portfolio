@@ -145,7 +145,7 @@ interface SkillOrToolProps {
 
 const SkillOrTool = ({ name, imgUrl }: SkillOrToolProps) => {
   return (
-    <>
+    <div className='flex flex-col items-center justify-center'>
       <Image
         src={imgUrl}
         className='h-20 w-20 mx-4 my-4'
@@ -155,6 +155,6 @@ const SkillOrTool = ({ name, imgUrl }: SkillOrToolProps) => {
         quality={100}
       />
       <p>{name}</p>
-    </>
+    </div>
   );
 };

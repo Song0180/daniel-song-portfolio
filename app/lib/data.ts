@@ -59,7 +59,12 @@ const userData = {
       },
     ],
     techStack: {
-      frontend: [{ name: 'JavaScript', imgUrl: '' }],
+      frontend: [
+        {
+          name: 'JavaScript',
+          imgUrl: 'https://commons.wikimedia.org/wiki/File:JavaScript-logo.png',
+        },
+      ],
       backend: [],
       deployment: [],
     },
