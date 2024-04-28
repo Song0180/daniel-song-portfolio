@@ -16,10 +16,12 @@ const userData = {
   ],
   about: {
     title:
-      'I am a dedicated software engineer committed to crafting exceptional products with an emphasis on user experience, leveraging up-to-date expertise and contemporary technologies.',
+      'I am a dedicated software engineer committed to crafting exceptional products with an emphasis on user experience, leveraging up-to-date expertise and modern technologies.',
     description: [
       'Hi, I am Song Yu, you can also call me Daniel. Thank you very much for dropping by my personal portfolio website.',
-      'I have been in the Internet and Tech industry for 1 year. ',
+      "With one year of experience in the Internet and Tech industry, I've had the privilege to collaborate with outstanding teams, sharing the same goal of contributing to the delivery of both internal and user-facing products with exceptional quality.",
+      'My passion for software development is fueled by a relentless pursuit of excellence and attention to detail, ensuring that every product I contribute to delivers an extraordinary user experience.',
+      'I thrive on staying abreast of the latest technologies and methodologies to continuously enhance my skills and bring innovative solutions to the table.',
     ],
     location: {
       countryRegion: 'Singapore',
@@ -56,6 +58,11 @@ const userData = {
         proficiency: 'Elementry',
       },
     ],
+    techStack: {
+      frontend: [{ name: 'JavaScript', imgUrl: '' }],
+      backend: [],
+      deployment: [],
+    },
   },
   experience: [
     {

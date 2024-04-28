@@ -13,8 +13,8 @@ export default function About() {
       <div className='bg-slate-100 dark:bg-black -mt-20 pt-10'>
         <div className='max-w-5xl mx-auto'>
           <div className='mx-4 lg:mx-6'>
-            <div className='text-container md:pt-8'>
-              <p className='md:leading-relaxed text-2xl text-gray-700 dark:text-gray-200 md:text-4xl font-semibold'>
+            <div className='text-container pt-4 md:pt-8'>
+              <p className='text-2xl text-gray-700 dark:text-gray-200 md:text-4xl font-semibold'>
                 {userData.about.title}
               </p>
             </div>
@@ -27,11 +27,14 @@ export default function About() {
                     Current Job
                   </h1>
                   <p className='text-lg text-gray-500 mt-4 dark:text-gray-300'>
-                    I am currently a full-time {userData.about.currentJob.title}{' '}
-                    working at{' '}
+                    I am currently working as a full-time{' '}
+                    <span className='font-semibold'>
+                      {userData.about.currentJob.title}
+                    </span>{' '}
+                    at{' '}
                     <a
                       href={userData.about.currentJob.companyUrl}
-                      className='hover:underline hover:text-blue-500'
+                      className='hover:underline hover:text-blue-500 font-bold'
                     >
                       {userData.about.currentJob.company}
                     </a>
@@ -72,7 +75,7 @@ export default function About() {
                   <p className='text-lg text-gray-500 mt-4 dark:text-gray-300'>
                     Email me at{' '}
                     <a
-                      className='dark:text-gray-100 font-bold hover:underline dark:hover:text-blue-500'
+                      className='dark:text-gray-100 font-bold hover:underline hover:text-blue-500 dark:hover:text-blue-500'
                       href={`mailto:${userData.email}`}
                     >
                       {userData.email}
@@ -91,68 +94,28 @@ export default function About() {
                   </p>
                 ))}
 
-                <h1 className='text-3xl my-4 text-gray-700 dark:text-gray-200  inline-block font-bold'>
+                <h1 className='text-3xl my-6 text-gray-700 dark:text-gray-200 font-bold'>
                   Tech Stack
                 </h1>
+                <h2 className='text-2xl my-4 text-gray-700 dark:text-gray-200 font-semibold'>
+                  Frontend Development
+                </h2>
                 <div className='flex flex-row flex-wrap mt-8'>
-                  {/* <Image
-                    src='https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/javascript/javascript.png'
-                    className='h-20 w-20 mx-4 my-4'
-                    alt='JavaScript Logo'
-                    width={20}
-                    height={20}
-                    quality={100}
-                  /> */}
-                  {/* <Image
-                    src='https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/java/java.png'
-                    className='h-20 w-20 mx-4 my-4'
-                    alt='Java Logo'
-                    width={20}
-                    height={20}
-                  />
-                  <Image
-                    src='https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/typescript/typescript.png'
-                    className='h-20 w-20 mx-4 my-4'
-                    alt='TypeScript Logo'
-                    width={20}
-                    height={20}
-                  />
-                  <Image
-                    src='https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/html/html.png'
-                    className='h-20 w-20 mx-4 my-4'
-                    alt='HTML Logo'
-                    width={20}
-                    height={20}
-                  />
-                  <Image
-                    src='https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/css/css.png'
-                    className='h-20 w-20 mx-4 my-4'
-                    alt='CSS Logo'
-                    width={20}
-                    height={20}
-                  />
-                  <Image
-                    src='https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/git/git.png'
-                    className='h-20 w-20 mx-4 my-4'
-                    alt='Git Logo'
-                    width={20}
-                    height={20}
-                  />
-                  <Image
-                    src='https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/react/react.png'
-                    className='h-20 w-20 mx-4 my-4'
-                    alt='React Logo'
-                    width={20}
-                    height={20}
-                  />
-                  <Image
-                    src='https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/mysql/mysql.png'
-                    className='h-20 w-20 mx-4 my-4'
-                    alt='MySQL Logo'
-                    width={20}
-                    height={20}
-                  /> */}
+                  {userData.about.techStack.frontend.map((item) => (
+                    <SkillOrTool
+                      key={item.name}
+                      name={item.name}
+                      imgUrl={item.imgUrl}
+                    />
+                  ))}
                 </div>
+                <h2 className='text-2xl my-4 text-gray-700 dark:text-gray-200 font-semibold'>
+                  Backend Development
+                </h2>
+                <h2 className='text-2xl my-4 text-gray-700 dark:text-gray-200 font-semibold'>
+                  Deployment Tools
+                </h2>
+
                 <h1 className='text-3xl my-4 text-gray-700 dark:text-gray-200  inline-block font-bold'>
                   Language Proficiencies
                 </h1>
@@ -174,3 +137,24 @@ export default function About() {
     </section>
   );
 }
+
+interface SkillOrToolProps {
+  name: string;
+  imgUrl: string;
+}
+
+const SkillOrTool = ({ name, imgUrl }: SkillOrToolProps) => {
+  return (
+    <>
+      <Image
+        src={imgUrl}
+        className='h-20 w-20 mx-4 my-4'
+        alt='JavaScript Logo'
+        width={20}
+        height={20}
+        quality={100}
+      />
+      <p>{name}</p>
+    </>
+  );
+};
