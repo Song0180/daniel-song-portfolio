@@ -149,10 +149,9 @@ const SkillOrTool = ({ name, imgUrl }: SkillOrToolProps) => {
       <Image
         src={imgUrl}
         className='h-20 w-20 mx-4 my-4'
-        alt='JavaScript Logo'
-        width={20}
-        height={20}
-        quality={100}
+        alt={name}
+        width={500}
+        height={500}
       />
       <p className='text-gray-700 dark:text-gray-200'>{name}</p>
     </div>

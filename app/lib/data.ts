@@ -65,6 +65,61 @@ const userData = {
           imgUrl:
             'https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png',
         },
+        {
+          name: 'TypeScript',
+          imgUrl:
+            'https://upload.wikimedia.org/wikipedia/commons/f/f5/Typescript.svg',
+        },
+        {
+          name: 'HTML',
+          imgUrl:
+            'https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg',
+        },
+        {
+          name: 'CSS',
+          imgUrl:
+            'https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg',
+        },
+        {
+          name: 'SASS',
+          imgUrl:
+            'https://upload.wikimedia.org/wikipedia/commons/9/96/Sass_Logo_Color.svg',
+        },
+        {
+          name: 'Tailwind CSS',
+          imgUrl:
+            'https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg',
+        },
+        {
+          name: 'Node.js',
+          imgUrl:
+            'https://upload.wikimedia.org/wikipedia/commons/d/d9/Node.js_logo.svg',
+        },
+        {
+          name: 'React',
+          imgUrl:
+            'https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg',
+        },
+        {
+          name: 'Next.js',
+          imgUrl:
+            'https://upload.wikimedia.org/wikipedia/commons/8/8e/Nextjs-logo.svg',
+        },
+        {
+          name: 'Webpack',
+          imgUrl:
+            'https://upload.wikimedia.org/wikipedia/commons/9/94/Webpack.svg',
+        },
+        {
+          name: 'Vite.js',
+          imgUrl:
+            'https://upload.wikimedia.org/wikipedia/commons/f/f1/Vitejs-logo.svg',
+        },
+        {
+          name: 'Express.js',
+          imgUrl:
+            'https://upload.wikimedia.org/wikipedia/commons/6/64/Expressjs.png',
+        },
       ],
       backend: [],
       deployment: [],
