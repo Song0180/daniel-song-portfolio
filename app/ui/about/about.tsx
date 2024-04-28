@@ -154,7 +154,7 @@ const SkillOrTool = ({ name, imgUrl }: SkillOrToolProps) => {
         height={20}
         quality={100}
       />
-      <p>{name}</p>
+      <p className='text-gray-700 dark:text-gray-200'>{name}</p>
     </div>
   );
 };

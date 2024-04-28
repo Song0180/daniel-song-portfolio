@@ -62,7 +62,8 @@ const userData = {
       frontend: [
         {
           name: 'JavaScript',
-          imgUrl: 'https://commons.wikimedia.org/wiki/File:JavaScript-logo.png',
+          imgUrl:
+            'https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png',
         },
       ],
       backend: [],
