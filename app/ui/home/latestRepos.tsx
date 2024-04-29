@@ -9,7 +9,7 @@ export default async function LatestRepos() {
     <section className='bg-slate-100 -mt-28 md:-mt-32 lg:-mt-48 dark:bg-black pb-20'>
       <div className='max-w-5xl mx-auto'>
         <div className='flex flex-col md:flex-row justify-between items-center md:pt-40 mx-4 lg:mx-6'>
-          <h1 className='drop-shadow-xl text-5xl md:text-8xl max-w-lg font-bold mt-20 mb-10 md:my-0 text-slate-300 dark:text-neutral-700 self-start text-left'>
+          <h1 className='text-5xl md:text-8xl max-w-lg font-bold mt-20 mb-10 md:my-0 text-slate-300 dark:text-neutral-700 self-start text-left'>
             Latest Repos
           </h1>
 
