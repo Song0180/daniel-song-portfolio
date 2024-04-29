@@ -11,7 +11,11 @@ const userData = {
       title: 'Rakuten Web Search',
       link: 'https://websearch.rakuten.co.jp',
       imgUrl: '/projects/RWS.png',
-      description: 'Haha',
+    },
+    {
+      title: 'Rakuten APAC Corporate Website',
+      link: 'https://corp.rakuten.asia/',
+      imgUrl: '/projects/APAC_CORP.png',
     },
   ],
   about: {
@@ -109,11 +113,13 @@ const userData = {
           name: 'Next.js',
           imgUrl:
             'https://upload.wikimedia.org/wikipedia/commons/8/8e/Nextjs-logo.svg',
+          shouldUseWhiteBackground: true,
         },
         {
           name: 'Webpack',
           imgUrl:
             'https://upload.wikimedia.org/wikipedia/commons/9/94/Webpack.svg',
+          shouldUseWhiteBackground: true,
         },
         {
           name: 'Vite.js',
@@ -175,6 +181,7 @@ const userData = {
           name: 'Google Cloud',
           imgUrl:
             'https://upload.wikimedia.org/wikipedia/commons/5/51/Google_Cloud_logo.svg',
+          shouldUseWhiteBackground: true,
         },
         {
           name: 'Jenkins',
@@ -185,6 +192,7 @@ const userData = {
           name: 'Terraform',
           imgUrl:
             'https://upload.wikimedia.org/wikipedia/commons/0/04/Terraform_Logo.svg',
+          shouldUseWhiteBackground: true,
         },
         {
           name: 'Nginx',

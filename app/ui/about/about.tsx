@@ -6,7 +6,7 @@ export default function About() {
   return (
     <section>
       <div className='max-w-5xl mx-auto h-28 mt-2 md:mt-0 md:h-40 flex flex-col justify-end'>
-        <h1 className='self-start mx-4 lg:mx-6 text-5xl md:text-8xl font-bold text-gray-700 dark:text-gray-200 py-16 md:py-12 text-left'>
+        <h1 className='drop-shadow-xl self-start mx-4 lg:mx-6 text-5xl md:text-8xl font-bold text-gray-700 dark:text-gray-200 py-16 md:py-12 text-left'>
           About
         </h1>
       </div>
@@ -121,6 +121,7 @@ export default function About() {
                       key={item.name}
                       name={item.name}
                       imgUrl={item.imgUrl}
+                      shouldUseWhiteBackground={item.shouldUseWhiteBackground}
                     />
                   ))}
                 </div>
@@ -152,6 +153,7 @@ export default function About() {
                       key={item.name}
                       name={item.name}
                       imgUrl={item.imgUrl}
+                      shouldUseWhiteBackground={item.shouldUseWhiteBackground}
                     />
                   ))}
                 </div>
@@ -167,14 +169,21 @@ export default function About() {
 interface SkillOrToolProps {
   name: string;
   imgUrl: string;
+  shouldUseWhiteBackground?: boolean;
 }
 
-const SkillOrTool = ({ name, imgUrl }: SkillOrToolProps) => {
+const SkillOrTool = ({
+  name,
+  imgUrl,
+  shouldUseWhiteBackground,
+}: SkillOrToolProps) => {
   return (
     <div className='flex flex-col items-center justify-center'>
       <Image
         src={imgUrl}
-        className='h-20 w-20 md:h-16 md:w-16 mx-4 my-4 object-contain'
+        className={`rounded-md h-20 w-20 md:h-16 md:w-16 mx-4 my-4 object-contain ${
+          shouldUseWhiteBackground ? 'dark:bg-white' : ''
+        }`}
         alt={name}
         width={500}
         height={500}

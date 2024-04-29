@@ -8,7 +8,7 @@ export default function Hero() {
         {userData.roles.map((role) => (
           <h1
             key={role}
-            className='mx-auto text-5xl md:text-8xl font-bold text-gray-700 dark:text-gray-200 my-2'
+            className='drop-shadow-xl mx-auto text-5xl md:text-8xl font-bold text-gray-700 dark:text-gray-200 my-2'
           >
             {role}
             {'.'}
@@ -23,7 +23,7 @@ export default function Hero() {
             height={480}
             src={userData.profileImgUrl}
             alt='profile image'
-            className='shadow'
+            className='shadow rounded-xl'
             priority
           />
           <div className='flex flex-row justify-between mt-4'>
