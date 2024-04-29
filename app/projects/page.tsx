@@ -1,5 +1,12 @@
-const Projects = () => {
-  return <div>Projects</div>;
+import { Metadata } from 'next/types';
+import Projects from '../ui/projects/projects';
+
+export const metadata: Metadata = {
+  title: 'Projects',
 };
 
-export default Projects;
+const ProjectsPage = () => {
+  return <Projects />;
+};
+
+export default ProjectsPage;

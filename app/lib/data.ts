@@ -9,9 +9,9 @@ const userData = {
   projects: [
     {
       title: 'Rakuten Web Search',
-      url: 'https://websearch.rakuten.co.jp',
-      imgUrl: '/haha.png',
-      description: '',
+      link: 'https://websearch.rakuten.co.jp',
+      imgUrl: '/projects/RWS.png',
+      description: 'Haha',
     },
   ],
   about: {
@@ -259,7 +259,6 @@ const userData = {
       ],
     },
   ],
-  resumeUrl: 'http://www.cdqz.net/html/cdqz/html/index.html',
   socialLinks: {
     LinkedIn: 'https://www.linkedin.com/in/daniel-yu-song/',
     GitHub: 'https://github.com/song0180',
