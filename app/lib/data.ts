@@ -30,7 +30,7 @@ const userData = {
     },
     currentJob: {
       company: 'Rakuten Asia',
-      companyUrl: '',
+      companyUrl: 'https://corp.rakuten.asia/',
       article: 'an',
       title: 'Associate Software Engineer',
     },
@@ -50,11 +50,11 @@ const userData = {
         proficiency: 'Full Professional',
       },
       {
-        language: 'Japanese',
+        language: 'Japanese/日本語',
         proficiency: 'Elementry',
       },
       {
-        language: 'French',
+        language: 'French/Français',
         proficiency: 'Elementry',
       },
     ],
@@ -101,6 +101,11 @@ const userData = {
             'https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg',
         },
         {
+          name: 'React Native',
+          imgUrl:
+            'https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg',
+        },
+        {
           name: 'Next.js',
           imgUrl:
             'https://upload.wikimedia.org/wikipedia/commons/8/8e/Nextjs-logo.svg',
@@ -115,14 +120,77 @@ const userData = {
           imgUrl:
             'https://upload.wikimedia.org/wikipedia/commons/f/f1/Vitejs-logo.svg',
         },
+      ],
+      backend: [
         {
-          name: 'Express.js',
+          name: 'Java',
           imgUrl:
-            'https://upload.wikimedia.org/wikipedia/commons/6/64/Expressjs.png',
+            'https://upload.wikimedia.org/wikipedia/commons/b/bb/Java-logo.png',
+        },
+        {
+          name: 'Spring Boot',
+          imgUrl:
+            'https://upload.wikimedia.org/wikipedia/commons/7/79/Spring_Boot.svg',
+        },
+        {
+          name: 'Go',
+          imgUrl:
+            'https://upload.wikimedia.org/wikipedia/commons/0/05/Go_Logo_Blue.svg',
         },
       ],
-      backend: [],
-      deployment: [],
+      database: [
+        {
+          name: 'MySQL',
+          imgUrl:
+            'https://upload.wikimedia.org/wikipedia/commons/7/7b/MySQL_Dolphin.jpg',
+        },
+        {
+          name: 'PostgreSQL',
+          imgUrl:
+            'https://upload.wikimedia.org/wikipedia/commons/2/29/Postgresql_elephant.svg',
+        },
+        {
+          name: 'Redis',
+          imgUrl:
+            'https://upload.wikimedia.org/wikipedia/commons/e/ee/Redis_logo.svg',
+        },
+        // {
+        //   name: 'MongoDB',
+        //   imgUrl:
+        //     'https://upload.wikimedia.org/wikipedia/commons/0/00/Mongodb-svgrepo-com.svg',
+        // },
+      ],
+      deployment: [
+        {
+          name: 'Docker',
+          imgUrl:
+            'https://upload.wikimedia.org/wikipedia/commons/7/70/Docker_logo.png',
+        },
+        {
+          name: 'Kubernetes',
+          imgUrl:
+            'https://upload.wikimedia.org/wikipedia/commons/3/39/Kubernetes_logo_without_workmark.svg',
+        },
+        {
+          name: 'Google Cloud Platform',
+          imgUrl:
+            'https://commons.wikimedia.org/wiki/File:Google_Cloud_logo.svg',
+        },
+        {
+          name: 'Jenkins',
+          imgUrl: 'https://commons.wikimedia.org/wiki/File:Jenkins_logo.svg',
+        },
+        {
+          name: 'Terraform',
+          imgUrl:
+            'https://upload.wikimedia.org/wikipedia/commons/0/04/Terraform_Logo.svg',
+        },
+        {
+          name: 'Nginx',
+          imgUrl:
+            'https://upload.wikimedia.org/wikipedia/commons/c/c5/Nginx_logo.svg',
+        },
+      ],
     },
   },
   experience: [

@@ -43,6 +43,21 @@ export default function About() {
                 </div>
                 <div className='mb-8'>
                   <h1 className='text-3xl md:text-xl font-semibold text-gray-700 dark:text-gray-200'>
+                    Language Procifiencies
+                  </h1>
+                  <ul className='text-lg text-gray-500 mt-4 dark:text-gray-300'>
+                    {userData.about.languages.map((item) => (
+                      <li key={item.language}>
+                        <p>
+                          <span className='font-bold'>{item.language}</span>:{' '}
+                          <span>{item.proficiency}</span>
+                        </p>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+                <div className='mb-8'>
+                  <h1 className='text-3xl md:text-xl font-semibold text-gray-700 dark:text-gray-200'>
                     Location
                   </h1>
                   <p className='text-lg text-gray-500 mt-4 dark:text-gray-300'>
@@ -112,23 +127,34 @@ export default function About() {
                 <h2 className='text-2xl my-4 text-gray-700 dark:text-gray-200 font-semibold'>
                   Backend Development
                 </h2>
+                <div className='flex flex-row flex-wrap mt-8'>
+                  {userData.about.techStack.backend.map((item) => (
+                    <SkillOrTool
+                      key={item.name}
+                      name={item.name}
+                      imgUrl={item.imgUrl}
+                    />
+                  ))}
+                  {userData.about.techStack.database.map((item) => (
+                    <SkillOrTool
+                      key={item.name}
+                      name={item.name}
+                      imgUrl={item.imgUrl}
+                    />
+                  ))}
+                </div>
                 <h2 className='text-2xl my-4 text-gray-700 dark:text-gray-200 font-semibold'>
                   Deployment Tools
                 </h2>
-
-                <h1 className='text-3xl my-4 text-gray-700 dark:text-gray-200  inline-block font-bold'>
-                  Language Proficiencies
-                </h1>
-                <ul className='text-lg text-gray-500 mt-4 dark:text-gray-300'>
-                  {userData.about.languages.map((item) => (
-                    <li key={item.language}>
-                      <p>
-                        <span className='font-bold'>{item.language}</span>:{' '}
-                        <span>{item.proficiency}</span>
-                      </p>
-                    </li>
+                <div className='flex flex-row flex-wrap mt-8'>
+                  {userData.about.techStack.deployment.map((item) => (
+                    <SkillOrTool
+                      key={item.name}
+                      name={item.name}
+                      imgUrl={item.imgUrl}
+                    />
                   ))}
-                </ul>
+                </div>
               </div>
             </div>
           </div>
@@ -148,7 +174,7 @@ const SkillOrTool = ({ name, imgUrl }: SkillOrToolProps) => {
     <div className='flex flex-col items-center justify-center'>
       <Image
         src={imgUrl}
-        className='h-20 w-20 mx-4 my-4'
+        className='h-16 w-16 mx-4 my-4'
         alt={name}
         width={500}
         height={500}
