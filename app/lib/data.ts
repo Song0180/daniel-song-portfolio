@@ -172,13 +172,14 @@ const userData = {
             'https://upload.wikimedia.org/wikipedia/commons/3/39/Kubernetes_logo_without_workmark.svg',
         },
         {
-          name: 'Google Cloud Platform',
+          name: 'Google Cloud',
           imgUrl:
-            'https://commons.wikimedia.org/wiki/File:Google_Cloud_logo.svg',
+            'https://upload.wikimedia.org/wikipedia/commons/5/51/Google_Cloud_logo.svg',
         },
         {
           name: 'Jenkins',
-          imgUrl: 'https://commons.wikimedia.org/wiki/File:Jenkins_logo.svg',
+          imgUrl:
+            'https://upload.wikimedia.org/wikipedia/commons/e/e9/Jenkins_logo.svg',
         },
         {
           name: 'Terraform',

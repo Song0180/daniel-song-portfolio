@@ -174,7 +174,7 @@ const SkillOrTool = ({ name, imgUrl }: SkillOrToolProps) => {
     <div className='flex flex-col items-center justify-center'>
       <Image
         src={imgUrl}
-        className='h-16 w-16 mx-4 my-4'
+        className='h-16 w-16 mx-4 my-4 object-contain'
         alt={name}
         width={500}
         height={500}
