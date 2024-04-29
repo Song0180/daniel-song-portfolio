@@ -109,10 +109,10 @@ export default function About() {
                   </p>
                 ))}
 
-                <h1 className='text-3xl my-6 text-gray-700 dark:text-gray-200 font-bold'>
+                <h1 className='text-3xl md:text-xl font-semibold my-6 text-gray-700 dark:text-gray-200'>
                   Tech Stack
                 </h1>
-                <h2 className='text-2xl my-4 text-gray-700 dark:text-gray-200 font-semibold'>
+                <h2 className='text-2xl md:text-lg font-semibold my-4 text-gray-700 dark:text-gray-200'>
                   Frontend Development
                 </h2>
                 <div className='flex flex-row flex-wrap mt-8'>
@@ -124,7 +124,7 @@ export default function About() {
                     />
                   ))}
                 </div>
-                <h2 className='text-2xl my-4 text-gray-700 dark:text-gray-200 font-semibold'>
+                <h2 className='text-2xl md:text-lg font-semibold my-4 text-gray-700 dark:text-gray-200'>
                   Backend Development
                 </h2>
                 <div className='flex flex-row flex-wrap mt-8'>
@@ -143,7 +143,7 @@ export default function About() {
                     />
                   ))}
                 </div>
-                <h2 className='text-2xl my-4 text-gray-700 dark:text-gray-200 font-semibold'>
+                <h2 className='text-2xl md:text-lg font-semibold my-4 text-gray-700 dark:text-gray-200'>
                   Deployment Tools
                 </h2>
                 <div className='flex flex-row flex-wrap mt-8'>
@@ -174,7 +174,7 @@ const SkillOrTool = ({ name, imgUrl }: SkillOrToolProps) => {
     <div className='flex flex-col items-center justify-center'>
       <Image
         src={imgUrl}
-        className='h-16 w-16 mx-4 my-4 object-contain'
+        className='h-20 w-20 md:h-16 md:w-16 mx-4 my-4 object-contain'
         alt={name}
         width={500}
         height={500}
