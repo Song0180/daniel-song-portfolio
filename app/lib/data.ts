@@ -129,11 +129,6 @@ const userData = {
       ],
       backend: [
         {
-          name: 'Java',
-          imgUrl:
-            'https://upload.wikimedia.org/wikipedia/commons/b/bb/Java-logo.png',
-        },
-        {
           name: 'Spring Boot',
           imgUrl:
             'https://upload.wikimedia.org/wikipedia/commons/7/79/Spring_Boot.svg',
@@ -187,12 +182,6 @@ const userData = {
           name: 'Jenkins',
           imgUrl:
             'https://upload.wikimedia.org/wikipedia/commons/e/e9/Jenkins_logo.svg',
-        },
-        {
-          name: 'Terraform',
-          imgUrl:
-            'https://upload.wikimedia.org/wikipedia/commons/0/04/Terraform_Logo.svg',
-          shouldUseWhiteBackground: true,
         },
         {
           name: 'Nginx',

@@ -181,7 +181,7 @@ const SkillOrTool = ({
     <div className='flex flex-col items-center justify-center'>
       <Image
         src={imgUrl}
-        className={`rounded-md h-20 w-20 md:h-16 md:w-16 mx-4 my-4 object-contain ${
+        className={`rounded-lg h-20 w-20 md:h-16 md:w-16 mx-4 my-4 object-contain ${
           shouldUseWhiteBackground ? 'dark:bg-white' : ''
         }`}
         alt={name}

@@ -30,7 +30,7 @@ export default function Footer() {
               </div>
             </div>
           </div>
-          <div className='space-x-4 flex flex-row items-center'>
+          <div className='space-x-1 flex flex-row items-center'>
             <SocialLinks />
           </div>
         </div>
