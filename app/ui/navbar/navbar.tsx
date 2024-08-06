@@ -1,20 +1,11 @@
 'use client';
-import { useEffect, useState } from 'react';
 import Link from 'next/link';
-import { useTheme } from 'next-themes';
 import userData from '@/app/lib/data';
 import NavLinks from './navLinks';
 import SocialLinks from './socialLinks';
-import { Sun, MoonStar } from 'lucide-react';
+import { ThemeSwitch } from './themeSwitch';
 
 export default function Navbar() {
-  const { theme, setTheme } = useTheme();
-  const [mounted, setMounted] = useState(false);
-
-  useEffect(() => {
-    setMounted(true);
-  }, []);
-
   return (
     <nav className='max-w-6xl mx-auto px-4 pt-10 md:pb-10 z-10 relative'>
       <div className='grid grid-rows-2 grid-cols-2 lg:flex lg:flex-row lg:justify-between lg:items-center'>
@@ -35,19 +26,7 @@ export default function Navbar() {
 
         <div className='space-x-1 sm:row-start-1 md:row-start-2 flex flex-wrap flex-row items-center justify-end'>
           <SocialLinks />
-          <button
-            aria-label='Toggle Dark Mode'
-            type='button'
-            className='w-8 rounded focus:outline-none hover:bg-zinc-100 text-gray-600 dark:text-gray-300 transition w-8 h-8 flex items-center justify-center dark:hover:bg-zinc-800 transition duration-200'
-            onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
-          >
-            {mounted &&
-              (theme === 'dark' ? (
-                <MoonStar className='h-[1.2rem] w-[1.2rem]' />
-              ) : (
-                <Sun className='h-[1.2rem] w-[1.2rem]' />
-              ))}
-          </button>
+          <ThemeSwitch align='end' />
         </div>
       </div>
     </nav>

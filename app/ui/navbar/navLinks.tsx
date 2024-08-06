@@ -28,7 +28,7 @@ export default function NavLinks() {
             key={link.name}
             className={`transition duration-200 flex justify-center item-center hover:shadow-lg dark:hover:bg-zinc-800 px-4 py-1 text-gray-600 rounded-md text-center text-base ${
               pathname === link.href
-                ? 'shadow-lg font-bold dark:text-gray-400 dark:bg-zinc-800'
+                ? 'shadow-lg font-bold dark:text-gray-300 dark:bg-zinc-800'
                 : 'font-normal dark:text-gray-300'
             }`}
           >
