@@ -10,7 +10,7 @@ export default function About() {
           About
         </h1>
       </div>
-      <div className='bg-slate-100 dark:bg-black -mt-20 pt-10'>
+      <div className='bg-slate-100 dark:bg-neutral-950 -mt-20 pt-10'>
         <div className='max-w-5xl mx-auto'>
           <div className='mx-4 lg:mx-6'>
             <div className='text-container pt-4 md:pt-8'>

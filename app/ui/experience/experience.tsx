@@ -8,7 +8,7 @@ export default function Experience() {
           Experience
         </h1>
       </div>
-      <div className='bg-slate-100 dark:bg-black -mt-20 pt-10'>
+      <div className='bg-slate-100 dark:bg-neutral-950 -mt-20 pt-10'>
         <div className='grid grid-cols-1 max-w-xl mx-auto pt-20'>
           {userData.experience.map((exp, idx) => (
             <>

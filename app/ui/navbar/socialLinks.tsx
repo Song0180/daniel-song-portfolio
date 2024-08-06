@@ -37,7 +37,7 @@ export default function SocialLinks() {
       {links.map((link) => {
         return (
           <a
-            className='text-base font-normal text-gray-600 dark:text-gray-300 transition-colors w-8 h-8 flex items-center justify-center dark:hover:bg-zinc-800 transition duration-200 rounded-md'
+            className='text-base font-normal text-gray-600 dark:text-gray-300 w-8 h-8 flex items-center justify-center hover:bg-zinc-100 dark:hover:bg-zinc-800 transition duration-200 rounded-md'
             key={link.name}
             href={link.href}
           >

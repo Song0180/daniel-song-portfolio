@@ -1,27 +1,29 @@
-import userData from '@/app/lib/data';
+// import userData from '@/app/lib/data';
 import Image from 'next/image';
 
-const Projects = () => {
+const Blogs = () => {
   return (
     <section>
       <div className='max-w-5xl mx-auto h-28 mt-2 md:mt-0 md:h-40 flex flex-col justify-end'>
         <h1 className='drop-shadow-xl self-start mx-4 lg:mx-6 text-5xl md:text-8xl font-bold text-gray-700 dark:text-gray-200 py-16 md:py-12 text-left'>
-          Projects
+          Blogs
         </h1>
       </div>
-      {/* Grid starts here */}
-      <div className='bg-slate-100 dark:bg-black -mt-20 pt-10'>
+      <div className='bg-slate-100 dark:bg-neutral-950 -mt-20 pt-10'>
         <div className='max-w-5xl mx-auto'>
-          <div className='mx-6 grid grid-cols-1 md:grid-cols-2 gap-8 py-10 pb-40'>
-            {userData.projects.map((projects, idx) => (
-              <ProjectCard
-                key={projects.title}
-                title={projects.title}
-                link={projects.link}
-                imgUrl={projects.imgUrl}
+          <div className='mx-4 lg:mx-6'>
+            <div className='grid grid-cols-1 md:grid-cols-2 gap-8 py-10 pb-40'>
+              {/* {userData.blogs.map((blog, idx) => (
+              <Blog
+                key={blog.title}
+                title={blog.title}
+                link={blog.link}
+                imgUrl={blog.imgUrl}
                 number={`${idx + 1}`}
               />
-            ))}
+            ))} */}
+              <p className='m-20 text-lg'>Coming soon... Stay tuned...</p>
+            </div>
           </div>
         </div>
       </div>
@@ -29,7 +31,7 @@ const Projects = () => {
   );
 };
 
-export default Projects;
+export default Blogs;
 
 interface ProjectCardProps {
   title: string;
@@ -38,7 +40,7 @@ interface ProjectCardProps {
   number: string;
 }
 
-const ProjectCard = ({ title, link, imgUrl, number }: ProjectCardProps) => {
+const Blog = ({ title, link, imgUrl, number }: ProjectCardProps) => {
   return (
     <a href={link} className='w-full block shadow-2xl'>
       <div className='relative overflow-hidden rounded-lg'>

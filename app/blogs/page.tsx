@@ -1,12 +1,12 @@
 import { Metadata } from 'next/types';
-import Projects from '../ui/projects/projects';
+import Blogs from '../ui/blogs/blogs';
 
 export const metadata: Metadata = {
   title: 'Projects',
 };
 
 const ProjectsPage = () => {
-  return <Projects />;
+  return <Blogs />;
 };
 
 export default ProjectsPage;

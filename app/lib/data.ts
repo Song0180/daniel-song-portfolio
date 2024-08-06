@@ -6,18 +6,7 @@ const userData = {
   email: 'danielsongyu@gmail.com',
   address: 'Singapore, Singapore',
   roles: ['Developer', 'Engineer', 'Team Player'],
-  projects: [
-    {
-      title: 'Rakuten Web Search',
-      link: 'https://websearch.rakuten.co.jp',
-      imgUrl: '/projects/RWS.png',
-    },
-    {
-      title: 'Rakuten APAC Corporate Website',
-      link: 'https://corp.rakuten.asia/',
-      imgUrl: '/projects/APAC_CORP.png',
-    },
-  ],
+  blogs: [],
   about: {
     title:
       'I am a dedicated software engineer committed to crafting exceptional products with an emphasis on user experience, leveraging up-to-date expertise and modern technologies.',

@@ -38,7 +38,7 @@ export default function Navbar() {
           <button
             aria-label='Toggle Dark Mode'
             type='button'
-            className='w-8 rounded focus:outline-none text-gray-600 dark:text-gray-300 transition-colors w-8 h-8 flex items-center justify-center dark:hover:bg-zinc-800 transition duration-200'
+            className='w-8 rounded focus:outline-none hover:bg-zinc-100 text-gray-600 dark:text-gray-300 transition w-8 h-8 flex items-center justify-center dark:hover:bg-zinc-800 transition duration-200'
             onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
           >
             {mounted &&
