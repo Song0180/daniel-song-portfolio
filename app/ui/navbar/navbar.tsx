@@ -11,10 +11,10 @@ export default function Navbar() {
       <div className='grid grid-rows-2 grid-cols-2 lg:flex lg:flex-row lg:justify-between lg:items-center'>
         <div className='flex flex-col row-start-1'>
           <Link href='/'>
-            <h1 className='font-semibold text-xl dark:text-gray-100'>
+            <h1 className='font-semibold text-xl text-gray-600 dark:text-gray-300'>
               {userData.name}
             </h1>
-            <p className='text-base font-light text-gray-500 dark:text-gray-300'>
+            <p className='text-base font-light text-gray-500 dark:text-gray-400'>
               {userData.designation}
             </p>
           </Link>
