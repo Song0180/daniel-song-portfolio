@@ -2,13 +2,13 @@ import userData from '@/app/lib/data';
 import Image from 'next/image';
 import Link from 'next/link';
 
-export default function PersonalProjects() {
+export default function SelectedBlogs() {
   return (
     <section className='bg-[#F1F1F1] -mt-40 dark:bg-gray-900'>
       <div className='max-w-6xl mx-auto'>
         <header className='flex flex-col md:flex-row justify-between items-center pt-40 mx-10 md:my-20 lg:my-0'>
           <h1 className='text-6xl lg:text-9xl max-w-lg font-bold text-gray-500 my-20 md:my-0 md:text-white dark:text-gray-600 text-center'>
-            Personal Projects
+            Selected Blogs
           </h1>
           <Link
             href='/projects'
@@ -33,29 +33,28 @@ export default function PersonalProjects() {
           </Link>
         </header>
 
-        {/* Grid starts here */}
         <div className='grid md:grid-cols-3 gap-8 lg:-mt-8 pb-40'>
-          {userData.projects.map((project, index) => (
+          {/* {userData.blogs.map((blog, index) => (
             <a
-              key={project.title}
+              key={blog.title}
               href='https://tailwindmasterkit.com'
               className='w-full block col-span-3 shadow-2xl'
             >
               <div className='relative overflow-hidden'>
                 <Image
-                  src={project.imgUrl}
-                  alt={project.title}
+                  src={blog.imgUrl}
+                  alt={blog.title}
                   className='transform hover:scale-125 transition duration-2000 ease-out'
                 />
                 <h1 className='absolute top-10 left-10 text-gray-50 font-bold text-xl bg-red-500 rounded-md px-2'>
-                  {project.title}
+                  {blog.title}
                 </h1>
                 <h1 className='absolute bottom-10 left-10 text-gray-50 font-bold text-xl'>
                   {index + 1}
                 </h1>
               </div>
             </a>
-          ))}
+          ))} */}
         </div>
       </div>
     </section>
