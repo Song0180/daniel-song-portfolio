@@ -144,11 +144,6 @@ const userData = {
           imgUrl:
             'https://upload.wikimedia.org/wikipedia/commons/e/ee/Redis_logo.svg',
         },
-        // {
-        //   name: 'MongoDB',
-        //   imgUrl:
-        //     'https://upload.wikimedia.org/wikipedia/commons/0/00/Mongodb-svgrepo-com.svg',
-        // },
       ],
       deployment: [
         {

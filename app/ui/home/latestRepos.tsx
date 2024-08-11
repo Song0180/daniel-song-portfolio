@@ -1,6 +1,6 @@
 import { getLatestRepos } from '@/app/lib/actions';
 import userData from '@/app/lib/data';
-import { Repo } from '@/app/lib/definitions';
+import { Repo } from '@/app/types/repo.type';
 import { ExternalLink, MoveRight } from 'lucide-react';
 
 export default async function LatestRepos() {

@@ -1,4 +1,4 @@
-import { Repo } from './definitions';
+import { Repo } from '@/app/types/repo.type';
 
 export const getLatestRepos = async (username: string) => {
   try {
